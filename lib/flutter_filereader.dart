@@ -68,7 +68,7 @@ class _FileReaderViewState extends State<FileReaderView> {
         if (Platform.isAndroid) {
           return _createAndroidView();
         } else {
-          return _createIosView();
+          return Center(child: Text("不支持的平台"));
         }
       } else if (_status == FileReaderState.ENGINE_LOAD_FAIL) {
         return _enginLoadFail();
@@ -124,14 +124,6 @@ class _FileReaderViewState extends State<FileReaderView> {
       }
       widget.openSuccess?.call(success);
     });
-  }
-
-  Widget _createIosView() {
-    return UiKitView(
-      viewType: "FileReader",
-      onPlatformViewCreated: _onPlatformViewCreated,
-      creationParamsCodec: StandardMessageCodec(),
-    );
   }
 
   String _fileType(String filePath) {
