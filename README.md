@@ -1,10 +1,12 @@
 # Flutter FileReader
 [![pub package](https://img.shields.io/pub/v/flutter_filereader.svg)](https://pub.dartlang.org/packages/flutter_filereader)
 
-##### A local file view widget,Support a variety of file types, such as Doc Eexcl PPT TXT and so on,Android is implemented by Tencent X5,iOS is implemented by WKWebView
+##### A local file view widget,Support a variety of file types, such as Doc Eexcl PPT TXT and so on,Android is implemented by Tencent X5.
 
+**注意**：已删除对iOS的支持。在iOS上可直接使用`webview_flutter`实现同样的效果。
 
 ## Depend on it
+
 Add this to your package's pubspec.yaml file:
 
 1.9.1
@@ -20,16 +22,8 @@ dependencies:
 
 
 ## Support File Type
-* IOS `docx,doc,xlsx,xls,pptx,ppt,pdf,txt,jpg,jpeg,png`
-* Android `docx,doc,xlsx,xls,pptx,ppt,pdf,txt`
 
-## Usage
-
-### iOS
-Make sure you add the following key to Info.plist for iOS
-```
-<key>io.flutter.embedded_views_preview</key><true/>
-```
+docx,doc,xlsx,xls,pptx,ppt,pdf,txt
  
 ### Example
 ```

@@ -1,4 +1,4 @@
 #import <Flutter/Flutter.h>
 
-@interface FlutterFileReaderPlugin: NSObject<FlutterPlugin>
+@interface FlutterFileReaderPlugin : NSObject<FlutterPlugin>
 @end
